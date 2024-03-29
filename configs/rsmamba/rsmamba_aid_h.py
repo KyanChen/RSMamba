@@ -1,9 +1,9 @@
 
 _base_ = [
-    '../_base_/rsmamba_default_runtime.py',
-    '../_base_/datasets/aid_bs64_pil_resize_autoaug.py',
+    '_base_/rsmamba_default_runtime.py',
+    '_base_/datasets/aid_bs64_pil_resize_autoaug.py',
     # '_base_/datasets/aid_dataset.py',
-    '../_base_/schedules/aid_schedule.py',
+    '_base_/schedules/aid_schedule.py',
 ]
 
 work_dir = 'work_dirs/rsmamba_aid_h'

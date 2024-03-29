@@ -1,9 +1,9 @@
 
 _base_ = [
-    '/_base_/rsmamba_default_runtime.py',
-    '/_base_/datasets/nwpu_bs64_pil_resize_autoaug.py',
+    '_base_/rsmamba_default_runtime.py',
+    '_base_/datasets/nwpu_bs64_pil_resize_autoaug.py',
     # '_base_/datasets/nwpu_dataset.py',
-    '/_base_/schedules/nwpu_schedule.py',
+    '_base_/schedules/nwpu_schedule.py',
 ]
 
 work_dir = 'work_dirs/rsmamba_nwpu_l'
