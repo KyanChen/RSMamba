@@ -65,11 +65,11 @@ If you find this project helpful, please give us a star ⭐️, your support is 
 
 🌟 **2024.03.28** Released the RSMamba project, which is fully consistent with the API interface and usage of MMPretrain.
 
+🌟 **2024.03.29** Open-sourced the [weight files](https://huggingface.co/KyanChen/RSMamba/tree/main) of RSMamba models of different sizes in the paper.
 
 ## TODO
 
-- [ ] Open-source model training parameters
-- [ ] Open-source HuggingFace Spaces Demo
+- [X] Open-source model training parameters
 
 ## Table of Contents
 

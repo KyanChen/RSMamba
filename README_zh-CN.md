@@ -65,11 +65,12 @@
 
 🌟 **2024.03.28** 发布了 RSMamba 项目，完全与 MMPretrain 保持一致的API接口及使用方法。
 
+🌟 **2024.03.29** 开源了论文中不同版本大小的 RSMamba 模型的[权重文件](https://huggingface.co/KyanChen/RSMamba/tree/main)。
+
 
 ## TODO
 
-- [ ] 开源模型训练参数
-- [ ] 开源HuggingFace Spaces Demo
+- [X] 开源模型训练参数
 
 ## 目录
 
