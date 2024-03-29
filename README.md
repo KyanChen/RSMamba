@@ -119,11 +119,11 @@ conda activate rsmamba
 
 Linux/Windows:
 ```shell
-pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121 -y
 ```
 Or
 ```shell
-conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=12.1 -c pytorch -c nvidia -y
 ```
 
 **Step 3**: Install [MMCV2.1.x](https://mmcv.readthedocs.io/en/latest/get_started/installation.html).
@@ -138,10 +138,10 @@ pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2
 **Step 4**: Install other dependencies.
 
 ```shell
-pip install -U einops shapely scipy terminaltables importlib
-pip install git+https://github.com/huggingface/transformers@main
-pip install causal-conv1d
-pip install mamba-ssm
+pip install -U mat4py ipdb
+pip install transformers==4.39.2
+pip install causal-conv1d==1.2.0.post2
+pip install mamba-ssm==1.2.0.post1
 ```
 
 </details>
