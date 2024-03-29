@@ -80,3 +80,4 @@ val_dataloader = dict(
         ann_file=code_root+'/val.txt',
     )
 )
+test_dataloader = val_dataloader
