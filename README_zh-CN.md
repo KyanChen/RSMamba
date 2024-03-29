@@ -319,7 +319,14 @@ python demo/image_demo.py ${IMAGE_DIR}  configs/rsmamba/name_to_config.py --chec
 如果你在研究中使用了本项目的代码或者性能基准，请参考如下 bibtex 引用 RSMamba。
 
 ```
-xxxx
+@misc{chen2024rsmamba,
+      title={RSMamba: Remote Sensing Image Classification with State Space Model}, 
+      author={Keyan Chen and Bowen Chen and Chenyang Liu and Wenyuan Li and Zhengxia Zou and Zhenwei Shi},
+      year={2024},
+      eprint={2403.19654},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## 开源许可证
