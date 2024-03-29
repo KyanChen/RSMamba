@@ -1,4 +1,5 @@
-# Copyright (c) OpenMMLab. All rights reserved.
+import sys
+sys.path.append(sys.path[0] + "/..")
 from argparse import ArgumentParser
 
 from mmengine.fileio import dump
