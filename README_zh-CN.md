@@ -14,7 +14,7 @@
     <span style="font-size: 20px; ">项目主页</span>
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://arxiv.org/abs/xxxx">
+  <a href="https://arxiv.org/abs/2403.19654">
     <span style="font-size: 20px; ">arXiv</span>
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
@@ -31,7 +31,7 @@
 
 [![GitHub stars](https://badgen.net/github/stars/KyanChen/RSMamba)](https://github.com/KyanChen/RSMamba)
 [![license](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-xxxxx-b31b1b.svg)](https://arxiv.org/abs/xxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2403.19654-b31b1b.svg)](https://arxiv.org/abs/2403.19654)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/KyanChen/RSMamba)
 
 <br>
@@ -46,7 +46,7 @@
 
 ## 简介
 
-本项目仓库是论文 [RSMamba: Remote Sensing Image Classification with State Space Model](https://arxiv.org/abs/xxxx) 的代码实现，基于 [MMPretrain](https://github.com/open-mmlab/mmpretrain) 项目进行开发。
+本项目仓库是论文 [RSMamba: Remote Sensing Image Classification with State Space Model](https://arxiv.org/abs/2403.19654) 的代码实现，基于 [MMPretrain](https://github.com/open-mmlab/mmpretrain) 项目进行开发。
 
 当前分支在PyTorch 2.x 和 CUDA 12.1 下测试通过，支持 Python 3.8+，能兼容绝大多数的 CUDA 版本。
 
