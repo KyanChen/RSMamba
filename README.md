@@ -48,7 +48,7 @@ English | [简体中文](README_zh-CN.md)
 
 This repository is the code implementation of the paper [RSMamba: Remote Sensing Image Classification with State Space Model](https://arxiv.org/abs/2403.19654), which is based on the [MMPretrain](https://github.com/open-mmlab/mmpretrain) project.
 
-The current branch has been tested on PyTorch 2.x and CUDA 12.1, supports Python 3.8+, and is compatible with most CUDA versions.
+The current branch has been tested on Linux system, PyTorch 2.x and CUDA 12.1, supports Python 3.8+, and is compatible with most CUDA versions.
 
 If you find this project helpful, please give us a star ⭐️, your support is our greatest motivation.
 
@@ -92,7 +92,7 @@ If you find this project helpful, please give us a star ⭐️, your support is 
 
 ### Requirements
 
-- Linux or Windows
+- Linux system, Windows is not tested, depending on whether `causal-conv1d` and `mamba-ssm` can be installed
 - Python 3.8+, recommended 3.11
 - PyTorch 2.0 or higher, recommended 2.2
 - CUDA 11.7 or higher, recommended 12.1

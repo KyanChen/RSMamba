@@ -48,7 +48,7 @@
 
 本项目仓库是论文 [RSMamba: Remote Sensing Image Classification with State Space Model](https://arxiv.org/abs/2403.19654) 的代码实现，基于 [MMPretrain](https://github.com/open-mmlab/mmpretrain) 项目进行开发。
 
-当前分支在PyTorch 2.x 和 CUDA 12.1 下测试通过，支持 Python 3.8+，能兼容绝大多数的 CUDA 版本。
+当前分支在 Linux 系统，PyTorch 2.x 和 CUDA 12.1 下测试通过，支持 Python 3.8+，能兼容绝大多数的 CUDA 版本。
 
 如果你觉得本项目对你有帮助，请给我们一个 star ⭐️，你的支持是我们最大的动力。
 
@@ -93,7 +93,7 @@
 
 ### 依赖项
 
-- Linux 或 Windows
+- Linux 系统， Windows 未测试，依赖于是否能安装 `causal-conv1d` 和 `mamba-ssm`
 - Python 3.8+，推荐使用 3.11
 - PyTorch 2.0 或更高版本，推荐使用 2.1
 - CUDA 11.7 或更高版本，推荐使用 12.1
@@ -119,6 +119,7 @@ conda activate rsmamba
 **步骤 2**：安装 [PyTorch2.2.x](https://pytorch.org/get-started/locally/)。
 
 Linux/Windows:
+
 ```shell
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121 -y
 ```
