@@ -94,13 +94,13 @@
 
 - Linux 或 Windows
 - Python 3.8+，推荐使用 3.11
-- PyTorch 2.0 或更高版本，推荐使用 2.2
+- PyTorch 2.0 或更高版本，推荐使用 2.1
 - CUDA 11.7 或更高版本，推荐使用 12.1
 - MMCV 2.0 或更高版本，推荐使用 2.1
 
 ### 环境安装
 
-推荐使用 Miniconda 来进行安装，以下命令将会创建一个名为 `rsmamba` 的虚拟环境，并安装 PyTorch 和 MMCV。
+推荐使用 Miniconda 来进行安装，以下命令将会创建一个名为 `rsmamba` 的虚拟环境，并安装 PyTorch 和 MMCV。下述安装步骤中，默认安装的 CUDA 版本为 **12.1**，如果你的 CUDA 版本不是 12.1，请根据实际情况进行修改。
 
 注解：如果你对 PyTorch 有经验并且已经安装了它，你可以直接跳转到下一小节。否则，你可以按照下述步骤进行准备。
 
@@ -119,11 +119,11 @@ conda activate rsmamba
 
 Linux/Windows:
 ```shell
-pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121 -y
 ```
 或者
 ```shell
-conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=12.1 -c pytorch -c nvidia -y
 ```
 
 **步骤 3**：安装 [MMCV2.1.x](https://mmcv.readthedocs.io/en/latest/get_started/installation.html)。
@@ -138,10 +138,10 @@ pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2
 **步骤 4**：安装其他依赖项。
 
 ```shell
-pip install -U einops shapely scipy terminaltables importlib
-pip install git+https://github.com/huggingface/transformers@main
-pip install causal-conv1d
-pip install mamba-ssm
+pip install -U mat4py ipdb
+pip install transformers==4.39.2
+pip install causal-conv1d==1.2.0.post2
+pip install mamba-ssm==1.2.0.post1
 ```
 
 </details>

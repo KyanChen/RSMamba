@@ -288,9 +288,9 @@ class RSMamba(BaseBackbone):
                 x_inputs = layer(x_inputs)
                 forward_x, reverse_x = torch.split(x_inputs, B, dim=0)
                 reverse_x = torch.flip(reverse_x, [1])
-                forward_x = torch.mean(forward_x, dim=1)
-                reverse_x = torch.mean(reverse_x, dim=1)
-                gate = torch.cat([forward_x, reverse_x], dim=-1)
+                mean_forward_x = torch.mean(forward_x, dim=1)
+                mean_reverse_x = torch.mean(reverse_x, dim=1)
+                gate = torch.cat([mean_forward_x, mean_reverse_x], dim=-1)
                 gate = self.gate_layers[i](gate)
                 gate = gate.unsqueeze(-1)
                 x = gate[:, 0:1] * forward_x + gate[:, 1:2] * reverse_x
@@ -306,10 +306,10 @@ class RSMamba(BaseBackbone):
                 # reverse the random index
                 rand_index = torch.argsort(rand_index)
                 shuffle_x = shuffle_x[:, rand_index]
-                forward_x = torch.mean(forward_x, dim=1)
-                reverse_x = torch.mean(reverse_x, dim=1)
-                shuffle_x = torch.mean(shuffle_x, dim=1)
-                gate = torch.cat([forward_x, reverse_x, shuffle_x], dim=-1)
+                mean_forward_x = torch.mean(forward_x, dim=1)
+                mean_reverse_x = torch.mean(reverse_x, dim=1)
+                mean_shuffle_x = torch.mean(shuffle_x, dim=1)
+                gate = torch.cat([mean_forward_x, mean_reverse_x, mean_shuffle_x], dim=-1)
                 gate = self.gate_layers[i](gate)
                 gate = gate.unsqueeze(-1)
                 x = gate[:, 0:1] * forward_x + gate[:, 1:2] * reverse_x + gate[:, 2:3] * shuffle_x

@@ -100,7 +100,7 @@ If you find this project helpful, please give us a star ⭐️, your support is 
 
 ### Environment Installation
 
-It is recommended to use Miniconda for installation. The following commands will create a virtual environment named `rsmamba` and install PyTorch and MMCV.
+It is recommended to use Miniconda for installation. The following commands will create a virtual environment named `rsmamba` and install PyTorch and MMCV. In the following installation steps, the default installed CUDA version is **12.1**. If your CUDA version is not 12.1, please modify it according to the actual situation.
 
 Note: If you are experienced with PyTorch and have already installed it, you can skip to the next section. Otherwise, you can follow the steps below.
 
