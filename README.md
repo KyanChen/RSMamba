@@ -308,6 +308,13 @@ We recommend that you do not install MMPretrain, as we have made some modificati
 
 If you encounter a `Bad substitution` error when running `dist_train.sh`, use `bash dist_train.sh` to run the script.
 
+
+### 3. Installation of causal-conv1d and mamba-ssm failed
+
+- If you encounter an error when installing causal-conv1d and mamba-ssm, check if your CUDA version matches the requirements of the installation package.
+- If the problem persists, download the corresponding precompiled package, and then use `pip install xxx.whl` to install it. Refer to [causal-conv1d](https://github.com/Dao-AILab/causal-conv1d/releases) and [mamba-ssm](https://github.com/state-spaces/mamba/releases).
+
+
 </details>
 
 ## Acknowledgements

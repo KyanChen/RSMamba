@@ -310,6 +310,11 @@ python demo/image_demo.py ${IMAGE_DIR}  configs/rsmamba/name_to_config.py --chec
 
 如果您在运行`dist_train.sh`时出现了`Bad substitution`的错误，请使用`bash dist_train.sh`来运行脚本。
 
+### 3. 安装 causal-conv1d 和 mamba-ssm 失败
+
+- 如果您在安装 causal-conv1d 和 mamba-ssm 时出现了错误，请检查您的CUDA版本是否与安装包的要求一致。
+- 如果一致仍出现问题，请下载对应预编译包，然后使用`pip install xxx.whl`来安装。参考 [causal-conv1d](https://github.com/Dao-AILab/causal-conv1d/releases) 和 [mamba-ssm](https://github.com/state-spaces/mamba/releases)。
+
 </details>
 
 ## 致谢
