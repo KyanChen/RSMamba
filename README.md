@@ -326,13 +326,11 @@ This project is developed based on [MMPretrain](https://github.com/open-mmlab/mm
 If you use the code or performance benchmarks of this project in your research, please refer to the following bibtex citation of RSMamba.
 
 ```
-@misc{chen2024rsmamba,
-      title={RSMamba: Remote Sensing Image Classification with State Space Model}, 
-      author={Keyan Chen and Bowen Chen and Chenyang Liu and Wenyuan Li and Zhengxia Zou and Zhenwei Shi},
-      year={2024},
-      eprint={2403.19654},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{chen2024rsmamba,
+  title={RSMamba: Remote Sensing Image Classification with State Space Model},
+  author={Chen, Keyan and Chen, Bowen and Liu, Chenyang and Li, Wenyuan and Zou, Zhengxia and Shi, Zhenwei},
+  journal={arXiv preprint arXiv:2403.19654},
+  year={2024}
 }
 ```
 
