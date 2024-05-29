@@ -140,7 +140,7 @@ pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2
 **步骤 4**：安装其他依赖项。
 
 ```shell
-pip install -U mat4py ipdb
+pip install -U mat4py ipdb modelindex
 pip install transformers==4.39.2
 pip install causal-conv1d==1.2.0.post2
 pip install mamba-ssm==1.2.0.post1
