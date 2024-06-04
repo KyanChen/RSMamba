@@ -12,8 +12,14 @@ data_preprocessor = dict(
 
 train_pipeline = [
     dict(type='LoadImageFromFile'),
-    dict(type='RandomResizedCrop', scale=224, crop_ratio_range=(0.1, 1.3), interpolation='bicubic'),
-    dict(type='RandomFlip', prob=[0.5, 0.5], direction=['horizontal', 'vertical']),
+    dict(
+        type='RandomResizedCrop',
+        scale=img_size,
+        crop_ratio_range=(0.4, 1.0),
+        backend='pillow',
+        interpolation='bicubic'),
+    dict(type='RandomFlip', prob=0.5, direction='horizontal'),
+    dict(type='RandomFlip', prob=0.5, direction='vertical'),
     dict(type='PackInputs'),
 ]
 
