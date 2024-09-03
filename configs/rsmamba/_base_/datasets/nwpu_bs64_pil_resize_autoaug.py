@@ -11,7 +11,7 @@ data_preprocessor = dict(
 
 bgr_mean = data_preprocessor['mean'][::-1]
 bgr_std = data_preprocessor['std'][::-1]
-
+img_size = 224
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
