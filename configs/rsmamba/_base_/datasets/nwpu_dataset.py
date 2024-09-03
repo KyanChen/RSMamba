@@ -9,7 +9,7 @@ data_preprocessor = dict(
     # convert image from BGR to RGB
     to_rgb=True,
 )
-
+img_size = 224
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
