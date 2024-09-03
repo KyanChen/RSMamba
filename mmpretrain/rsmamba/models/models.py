@@ -163,6 +163,7 @@ class RSMamba(BaseBackbone):
                 use_conv_bias=True,
                 hidden_act="silu",
                 use_bias=False,
+                use_mambapy=True,
             )
             _layer_cfg.update(layer_cfgs[i])
             _layer_cfg = mmengine.Config(_layer_cfg)
